@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VideoStream</title>
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="videonavlinks">
+
+            <div class="logo">
+                <img
+                    src="static/images/logo.png"
+                    alt="VideoStream"
+                    class="logo-icon"
+                >
+
+                <span>Video</span>
+                <strong>Stream</strong>
+            </div>
+
+            <nav class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#explorar">Explorar</a>
+                <a href="#mi-lista">Mi lista</a>
+            </nav>
+
+        </div>
+
+
+        <div class="buscador">
+
+            <input
+                type="text"
+                id="buscarDestino"
+                aria-label="Buscar"
+            >
+
+            <button type="button">
+                🔔
+            </button>
+
+            <button type="button">
+                👤
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+    <main>
+
+        <!-- VIDEO PRINCIPAL -->
+        <section class="hero" id="inicio">
+
+            <div class="hero-texto">
+
+                <h2>
+                    Lagos y montañas
+                </h2>
+
+                <p>
+                    95 mil visualizaciones · 10 abr 2024
+                </p>
+
+
+                <div class="hero-botones">
+
+                    <a
+                        href="#"
+                        class="btn btn-principal"
+                    >
+                        👍
+                        <span>4,8 K</span>
+                    </a>
+
+                    <a
+                        href="#"
+                        class="btn btn-secundario"
+                    >
+                        👎
+                        <span>120</span>
+                    </a>
+
+                    <a
+                        href="#"
+                        class="btn"
+                    >
+                        Compartir
+                    </a>
+
+                    <a
+                        href="#mi-lista"
+                        class="btn"
+                    >
+                        ＋ Añadir a la cola
+                    </a>
+
+                </div>
+
+
+                <!-- CANAL -->
+
+                <div class="canal">
+
+                    <div class="canal-avatar"></div>
+
+                    <div class="canal-info">
+
+                        <strong>
+                            VideoStream
+                        </strong>
+
+                        <p>
+                            1,2 M de suscriptores
+                        </p>
+
+                    </div>
+
+                    <button class="btn-suscribirse">
+                        Suscribirse
+                    </button>
+
+                </div>
+
+
+                <a
+                    href="#"
+                    class="mostrar-mas"
+                >
+                    Mostrar más
+                </a>
+
+            </div>
+
+
+            <!-- VIDEO -->
+            <div class="hero-imagen">
+
+                <div class="imagen-placeholder">
+
+                    <div class="video-play">
+                        ▶
+                    </div>
+
+                    <div class="video-time">
+                        0:00 / 4:32
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- COLUMNA DERECHA -->
+            <aside class="video-sidebar">
+
+                <!-- SIGUIENTE EN LA COLA -->
+
+                <div
+                    class="lista-cola"
+                    id="mi-lista"
+                >
+
+                    <div class="sidebar-header">
+
+                        <h3>
+                            Siguiente en la cola
+                        </h3>
+
+                        <button>
+                            Limpiar cola
+                        </button>
+
+                    </div>
+
+
+                    <article class="video-item">
+
+                        <div class="miniatura">
+                            <span>6:15</span>
+                        </div>
+
+                        <div class="video-info">
+
+                            <h4>
+                                Explorando la Patagonia
+                            </h4>
+
+                            <p>
+                                VideoStream
+                            </p>
+
+                            <p>
+                                120 mil visualizaciones
+                            </p>
+
+                        </div>
+
+                        <button>
+                            ×
+                        </button>
+
+                    </article>
+
+
+                    <article class="video-item">
+
+                        <div class="miniatura">
+                            <span>4:10</span>
+                        </div>
+
+                        <div class="video-info">
+
+                            <h4>
+                                Comida callejera
+                            </h4>
+
+                            <p>
+                                VideoStream
+                            </p>
+
+                            <p>
+                                98 mil visualizaciones
+                            </p>
+
+                        </div>
+
+                        <button>
+                            ×
+                        </button>
+
+                    </article>
+
+
+                    <article class="video-item">
+
+                        <div class="miniatura">
+                            <span>8:12</span>
+                        </div>
+
+                        <div class="video-info">
+
+                            <h4>
+                                Ciudades del mundo
+                            </h4>
+
+                            <p>
+                                VideoStream
+                            </p>
+
+                            <p>
+                                110 mil visualizaciones
+                            </p>
+
+                        </div>
+
+                        <button>
+                            ×
+                        </button>
+
+                    </article>
+
+                </div>
+
+
+                <!-- RECOMENDADOS -->
+
+                <div
+                    class="destinos-section"
+                    id="explorar"
+                >
+
+                    <div class="section-header">
+
+                        <h3>
+                            Recomendados
+                        </h3>
+
+                    </div>
+
+
+                    <div class="destinos">
+
+                        <article class="destino-card">
+
+                            <div class="card-imagen torres">
+                                <span>5:20</span>
+                            </div>
+
+                            <div class="card-contenido">
+
+                                <h3>
+                                    Rutas de trekking
+                                </h3>
+
+                                <p class="descripcion">
+                                    80 mil visualizaciones
+                                </p>
+
+                                <button class="btn-ver-mas">
+                                    ＋
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="destino-card">
+
+                            <div class="card-imagen cusco">
+                                <span>3:50</span>
+                            </div>
+
+                            <div class="card-contenido">
+
+                                <h3>
+                                    Fauna patagónica
+                                </h3>
+
+                                <p class="descripcion">
+                                    60 mil visualizaciones
+                                </p>
+
+                                <button class="btn-ver-mas">
+                                    ＋
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="destino-card">
+
+                            <div class="card-imagen cancun">
+                                <span>4:30</span>
+                            </div>
+
+                            <div class="card-contenido">
+
+                                <h3>
+                                    Atardeceres increíbles
+                                </h3>
+
+                                <p class="descripcion">
+                                    72 mil visualizaciones
+                                </p>
+
+                                <button class="btn-ver-mas">
+                                    ＋
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+
+        <!-- MÁS VIDEOS -->
+        <section
+            class="destinos-section mas-videos"
+            id="destinos"
+        >
+
+            <div class="section-header">
+
+                <h2>
+                    Más videos
+                </h2>
+
+            </div>
+
+
+            <div class="destinos">
+
+                <article class="destino-card">
+
+                    <div class="card-imagen torres">
+                        <span>6:15</span>
+                    </div>
+
+                    <div class="card-contenido">
+
+                        <h3>
+                            Rutas de trekking
+                        </h3>
+
+                        <p class="descripcion">
+                            80 mil visualizaciones
+                        </p>
+
+
+                    </div>
+
+                </article>
+
+                <article class="destino-card">
+
+                    <div class="card-imagen cusco">
+                        <span>4:32</span>
+                    </div>
+
+                    <div class="card-contenido">
+
+                        <h3>
+                            Lagos y montañas
+                        </h3>
+
+                        <p class="descripcion">
+                            95 mil visualizaciones
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="destino-card">
+
+                    <div class="card-imagen cancun">
+                        <span>3:50</span>
+                    </div>
+
+                    <div class="card-contenido">
+
+                        <h3>
+                            Fauna patagónica
+                        </h3>
+
+                        <p class="descripcion">
+                            60 mil visualizaciones
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="destino-card">
+
+                    <div class="card-imagen madrid">
+                        <span>5:20</span>
+                    </div>
+
+                    <div class="card-contenido">
+
+                        <h3>
+                            Consejos para viajar
+                        </h3>
+
+                        <p class="descripcion">
+                            110 mil visualizaciones
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <p
+                id="mensajeBusqueda"
+                class="mensaje-busqueda"
+            ></p>
+
+        </section>
+
+    </main>
+
+
+    <script src="static/js/script.js"></script>
+
+</body>
+</html>
