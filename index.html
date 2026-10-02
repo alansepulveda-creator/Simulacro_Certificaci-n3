@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +18,10 @@
         <div class="videonavlinks">
 
             <div class="logo">
-                <img
-                    src="static/images/logo.png"
-                    alt="VideoStream"
-                    class="logo-icon"
-                >
+                <img src="static/images/youtube.webp" alt="VideoStream" class="logo-icon">
 
                 <span>Video</span>
-                <strong>Stream</strong>
+                <strong class="rojo">Stream</strong>
             </div>
 
             <nav class="nav">
@@ -38,18 +35,22 @@
 
         <div class="buscador">
 
-            <input
-                type="text"
-                id="buscarDestino"
-                aria-label="Buscar"
-            >
+            <div class="barra-busqueda">
+
+                <input type="text" id="buscarDestino" placeholder="Buscar...">
+
+                <button type="button" class="btn-lupa">
+                    🔍
+                </button>
+
+            </div>
 
             <button type="button">
-                🔔
+                <img src="static/images/campana.png" alt="campana">
             </button>
 
             <button type="button">
-                👤
+                <img src="static/images/user.png" alt="usuario">
             </button>
 
         </div>
@@ -76,33 +77,21 @@
 
                 <div class="hero-botones">
 
-                    <a
-                        href="#"
-                        class="btn btn-principal"
-                    >
+                    <a href="#" class="btn btn-principal">
                         👍
                         <span>4,8 K</span>
                     </a>
 
-                    <a
-                        href="#"
-                        class="btn btn-secundario"
-                    >
+                    <a href="#" class="btn btn-secundario">
                         👎
                         <span>120</span>
                     </a>
 
-                    <a
-                        href="#"
-                        class="btn"
-                    >
+                    <a href="#" class="btn">
                         Compartir
                     </a>
 
-                    <a
-                        href="#mi-lista"
-                        class="btn"
-                    >
+                    <a href="#mi-lista" class="btn">
                         ＋ Añadir a la cola
                     </a>
 
@@ -134,10 +123,7 @@
                 </div>
 
 
-                <a
-                    href="#"
-                    class="mostrar-mas"
-                >
+                <a href="#" class="mostrar-mas">
                     Mostrar más
                 </a>
 
@@ -147,17 +133,9 @@
             <!-- VIDEO -->
             <div class="hero-imagen">
 
-                <div class="imagen-placeholder">
-
-                    <div class="video-play">
-                        ▶
-                    </div>
-
-                    <div class="video-time">
-                        0:00 / 4:32
-                    </div>
-
-                </div>
+                <video id="videoPrincipal" controls playsinline>
+                    <source src="static/videos/lagos.mp4" type="video/mp4">
+                </video>
 
             </div>
 
@@ -167,10 +145,7 @@
 
                 <!-- SIGUIENTE EN LA COLA -->
 
-                <div
-                    class="lista-cola"
-                    id="mi-lista"
-                >
+                <div class="lista-cola" id="mi-lista">
 
                     <div class="sidebar-header">
 
@@ -184,11 +159,17 @@
 
                     </div>
 
-
+                    <!-- MINIATURAS DE VIDEOS-->
                     <article class="video-item">
 
                         <div class="miniatura">
+
+                            <video muted loop preload="metadata">
+                                <source src="static/videos/patagonia.mp4" type="video/mp4">
+                            </video>
+
                             <span>6:15</span>
+
                         </div>
 
                         <div class="video-info">
@@ -276,10 +257,7 @@
 
                 <!-- RECOMENDADOS -->
 
-                <div
-                    class="destinos-section"
-                    id="explorar"
-                >
+                <div class="destinos-section" id="explorar">
 
                     <div class="section-header">
 
@@ -294,8 +272,14 @@
 
                         <article class="destino-card">
 
-                            <div class="card-imagen torres">
+                            <div class="targeta-imagen-torres">
+
+                                <video muted loop preload="metadata">
+                                    <source src="static/videos/trekking.mp4" type="video/mp4">
+                                </video>
+
                                 <span>5:20</span>
+
                             </div>
 
                             <div class="card-contenido">
@@ -319,8 +303,13 @@
 
                         <article class="destino-card">
 
-                            <div class="card-imagen cusco">
-                                <span>3:50</span>
+                            <div class="targeta-imagen-cusco">
+                                <video muted loop preload="metadata">
+                                    <source src="static/videos/trekking.mp4" type="video/mp4">
+                                </video>
+
+                                <span>5:20</span>
+
                             </div>
 
                             <div class="card-contenido">
@@ -344,7 +333,7 @@
 
                         <article class="destino-card">
 
-                            <div class="card-imagen cancun">
+                            <div class="targeta-imagen-cancun">
                                 <span>4:30</span>
                             </div>
 
@@ -376,10 +365,7 @@
 
 
         <!-- MÁS VIDEOS -->
-        <section
-            class="destinos-section mas-videos"
-            id="destinos"
-        >
+        <section class="destinos-section mas-videos" id="destinos">
 
             <div class="section-header">
 
@@ -478,10 +464,7 @@
             </div>
 
 
-            <p
-                id="mensajeBusqueda"
-                class="mensaje-busqueda"
-            ></p>
+            <p id="mensajeBusqueda" class="mensaje-busqueda"></p>
 
         </section>
 
@@ -491,4 +474,5 @@
     <script src="static/js/script.js"></script>
 
 </body>
+
 </html>
