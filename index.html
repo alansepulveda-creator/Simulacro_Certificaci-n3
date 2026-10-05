@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="author" content="Alan Sepúlveda">
     <title>VideoStream</title>
 
     <link rel="stylesheet" href="static/css/style.css">
@@ -64,78 +64,84 @@
         <!-- VIDEO PRINCIPAL -->
         <section class="hero" id="inicio">
 
-            <div class="hero-texto">
+            <!-- CONTENIDO PRINCIPAL DEL VIDEO -->
+            <div class="hero-contenido">
 
-                <h2>
-                    Lagos y montañas
-                </h2>
+                <!-- VIDEO -->
+                <div class="hero-imagen">
 
-                <p>
-                    95 mil visualizaciones · 10 abr 2024
-                </p>
-
-
-                <div class="hero-botones">
-
-                    <a href="#" class="btn btn-principal">
-                        👍
-                        <span>4,8 K</span>
-                    </a>
-
-                    <a href="#" class="btn btn-secundario">
-                        👎
-                        <span>120</span>
-                    </a>
-
-                    <a href="#" class="btn">
-                        Compartir
-                    </a>
-
-                    <a href="#mi-lista" class="btn">
-                        ＋ Añadir a la cola
-                    </a>
+                    <video id="videoPrincipal" controls playsinline>
+                        <source src="static/videos/lagos.mp4" type="video/mp4">
+                    </video>
 
                 </div>
 
 
-                <!-- CANAL -->
+                <!-- INFORMACIÓN DEL VIDEO -->
+                <div class="hero-texto">
 
-                <div class="canal">
+                    <h2>
+                        Lagos y montañas
+                    </h2>
 
-                    <div class="canal-avatar"></div>
+                    <p>
+                        95 mil visualizaciones · 10 abr 2024
+                    </p>
 
-                    <div class="canal-info">
 
-                        <strong>
-                            VideoStream
-                        </strong>
+                    <div class="hero-botones">
 
-                        <p>
-                            1,2 M de suscriptores
-                        </p>
+                        <a href="#" class="btn btn-principal">
+                            👍
+                            <span>4,8 K</span>
+                        </a>
+
+                        <a href="#" class="btn btn-secundario">
+                            👎
+                            <span>120</span>
+                        </a>
+
+                        <a href="#" class="btn">
+                            Compartir
+                        </a>
+
+                        <a href="#mi-lista" class="btn">
+                            ＋ Añadir a la cola
+                        </a>
 
                     </div>
 
-                    <button class="btn-suscribirse">
-                        Suscribirse
-                    </button>
+
+                    <!-- CANAL -->
+
+                    <div class="canal">
+
+                        <div class="canal-avatar"></div>
+
+                        <div class="canal-info">
+
+                            <strong>
+                                VideoStream
+                            </strong>
+
+                            <p>
+                                1,2 M de suscriptores
+                            </p>
+
+                        </div>
+
+                        <button class="btn-suscribirse">
+                            Suscribirse
+                        </button>
+
+                    </div>
+
+
+                    <a href="#" class="mostrar-mas">
+                        Mostrar más
+                    </a>
 
                 </div>
-
-
-                <a href="#" class="mostrar-mas">
-                    Mostrar más
-                </a>
-
-            </div>
-
-
-            <!-- VIDEO -->
-            <div class="hero-imagen">
-
-                <video id="videoPrincipal" controls playsinline>
-                    <source src="static/videos/lagos.mp4" type="video/mp4">
-                </video>
 
             </div>
 
@@ -304,6 +310,7 @@
                         <article class="destino-card">
 
                             <div class="targeta-imagen-cusco">
+
                                 <video muted loop preload="metadata">
                                     <source src="static/videos/trekking.mp4" type="video/mp4">
                                 </video>
@@ -334,7 +341,13 @@
                         <article class="destino-card">
 
                             <div class="targeta-imagen-cancun">
-                                <span>4:30</span>
+
+                                <video muted loop preload="metadata">
+                                    <source src="static/videos/trekking.mp4" type="video/mp4">
+                                </video>
+
+                                <span>4:32</span>
+
                             </div>
 
                             <div class="card-contenido">
@@ -394,10 +407,10 @@
                             80 mil visualizaciones
                         </p>
 
-
                     </div>
 
                 </article>
+
 
                 <article class="destino-card">
 

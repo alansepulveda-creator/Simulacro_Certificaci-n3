@@ -47,15 +47,15 @@ input {
 
 .header {
     width: 100%;
-    height: 100%;
-    max-height: 100px;
-    padding: 0px 0%;
+
+    padding: 10px 4%;
 
     background-color: var(--blanco);
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     flex-wrap: wrap;
 
     gap: 20px;
@@ -68,12 +68,14 @@ input {
 
 .videonavlinks {
     display: flex;
+
     align-items: center;
-    justify-content: space-around;
+
+    justify-content: space-between;
 
     flex-wrap: wrap;
 
-    gap: 5rem;
+    gap: 35px;
 }
 
 
@@ -81,25 +83,26 @@ input {
 
 .logo {
     display: flex;
+
     align-items: center;
+
     gap: 4px;
 
-    font-size: 1.7rem;
-    font-weight:bold;
+    font-size: 1.4rem;
+
+    font-weight: bold;
 
     color: var(--negro);
-
-    flex-grow: 1;
 }
-.rojo{
-color: var(--rojo);
-font-weight: lighter;
+
+.rojo {
+    color: var(--rojo);
+    font-weight: lighter;
 }
 
 .logo-icon {
-    font-size: 1.7rem;
-    width: 5rem;
-    height: 5rem;
+    width: 40px;
+    height: 40px;
 }
 
 
@@ -107,19 +110,19 @@ font-weight: lighter;
 
 .nav {
     display: flex;
+
     align-items: center;
-    justify-content: space-evenly;
+
+    justify-content: center;
 
     flex-wrap: wrap;
 
-    gap: 20px;
-
-    flex-grow: 1;
+    gap: 25px;
 }
 
 .nav a {
     color: #333;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .nav a:hover {
@@ -134,39 +137,53 @@ font-weight: lighter;
 
 .buscador {
     display: flex;
+
     align-items: center;
-    gap: 15px;
+
+    gap: 10px;
+
+    flex-grow: 1;
+
+    justify-content: flex-end;
 }
 
 .barra-busqueda {
     display: flex;
+
     align-items: center;
 
     width: 60%;
-    min-width: 10px;
+
+    min-width: 180px;
 
     border: 1px solid #ccc;
+
     border-radius: 6px;
 }
 
 .buscador input {
     width: 100%;
-    min-width: 10px;
+
+    min-width: 0;
 
     padding: 10px 12px;
 
     border: none;
+
     outline: none;
+
     border-radius: 6px;
 }
 
 .buscador button {
-    padding: 10px 15px;
+    padding: 6px 8px;
 
     border: none;
+
     border-radius: 6px;
 
     background-color: var(--blanco);
+
     color: white;
 
     cursor: pointer;
@@ -230,11 +247,24 @@ main {
     border-radius: 12px;
 }
 
+/* CONTENIDO PRINCIPAL DEL VIDEO ////////////////////////////////////////////////////////////// */
+
+.hero-contenido {
+    flex: 2 1 700px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 20px;
+
+    min-width: 0;
+}
 
 /* TEXTO HERO ///////////////////////////////////////////////////////7///////////////////////////////// */
 
 .hero-texto {
-    flex: 1 1 300px;
+    flex: 0 1 300px;
+    min-width: 250px;
 }
 
 .hero-texto h2 {
@@ -288,8 +318,7 @@ main {
 /* IMAGEN HERO /////////////////////////////////////////////////////////////////////////////////////// */
 
 .hero-imagen {
-    flex: 2 1 500px;
-
+    flex: 1 1 500px;
     min-width: 0;
 }
 
@@ -328,10 +357,11 @@ main {
 /* SIDEBAR /////////////////////////////////////////////////////////////////////////////////////////// */
 
 .video-sidebar {
-    flex: 1 1 250px;
+    flex: 1 1 260px;
 
-    min-width: 250px;
+    min-width: 260px;
 }
+
 
 
 /* COLA //////////////////////////////////////////////////////////////////////////////////////////// */
@@ -606,6 +636,46 @@ main {
     background-color: var(--gris-claro);
 }
 
+.targeta-imagen-torres,
+.targeta-imagen-cusco,
+.targeta-imagen-cancun {
+    flex: 0 0 100px;
+
+    min-height: 60px;
+
+    background-color: var(--gris-claro);
+
+    border-radius: 6px;
+
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    padding: 4px;
+
+    color: white;
+
+    font-size: 0.7rem;
+
+    font-weight: bold;
+}
+
+
+
+.targeta-imagen-torres video,
+.targeta-imagen-cusco video,
+.targeta-imagen-cancun video{
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border-radius: 6px;
+
+    object-fit: cover;
+}
+
 .torres {
     background-color: #b9c6cc;
 }
@@ -629,8 +699,8 @@ main {
     padding: 12px;
 
     display: flex;
-    flex-direction: column;
 
+    flex-direction: column;
     gap: 5px;
 
     flex-grow: 1;
@@ -726,7 +796,9 @@ main {
     background-color: transparent;
 }
 
-.video-sidebar .card-imagen {
+.video-sidebar .targeta-imagen-torres,
+.video-sidebar .targeta-imagen-cusco,
+.video-sidebar .targeta-imagen-cancun {
     flex: 0 0 100px;
 
     min-height: 60px;
