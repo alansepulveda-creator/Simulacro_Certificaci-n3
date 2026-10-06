@@ -2,121 +2,243 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Alan Sepúlveda">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="author"
+        content="Alan Sepúlveda">
+
     <title>VideoStream</title>
 
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet"
+        href="static/css/style.css">
+
 </head>
+
 
 <body>
 
+
     <!-- HEADER -->
+
     <header class="header">
+
 
         <div class="videonavlinks">
 
+
             <div class="logo">
-                <img src="static/images/youtube.webp" alt="VideoStream" class="logo-icon">
+
+                <img
+                    src="static/images/youtube.webp"
+                    alt="VideoStream"
+                    class="logo-icon">
 
                 <span>Video</span>
-                <strong class="rojo">Stream</strong>
+
+                <strong class="rojo">
+                    Stream
+                </strong>
+
             </div>
 
+
             <nav class="nav">
-                <a href="#inicio">Inicio</a>
-                <a href="#explorar">Explorar</a>
-                <a href="#mi-lista">Mi lista</a>
+
+                <a href="#inicio">
+                    Inicio
+                </a>
+
+                <a href="#explorar">
+                    Explorar
+                </a>
+
+                <a href="#mi-lista">
+                    Mi lista
+                </a>
+
             </nav>
+
 
         </div>
 
 
+
+        <!-- BUSCADOR -->
+
         <div class="buscador">
+
 
             <div class="barra-busqueda">
 
-                <input type="text" id="buscarDestino" placeholder="Buscar...">
+                <input
+                    type="text"
+                    id="buscarDestino"
+                    placeholder="Buscar...">
 
-                <button type="button" class="btn-lupa">
+                <button
+                    type="button"
+                    class="btn-lupa">
+
                     🔍
+
                 </button>
 
             </div>
 
-            <button type="button">
-                <img src="static/images/campana.png" alt="campana">
-            </button>
 
             <button type="button">
-                <img src="static/images/user.png" alt="usuario">
+
+                <img
+                    src="static/images/campana.png"
+                    alt="Notificaciones">
+
             </button>
+
+
+            <button type="button">
+
+                <img
+                    src="static/images/user.png"
+                    alt="Usuario">
+
+            </button>
+
 
         </div>
+
 
     </header>
 
 
-    <!-- CONTENIDO -->
+
+    <!-- CONTENIDO PRINCIPAL -->
+
     <main>
 
-        <!-- VIDEO PRINCIPAL -->
-        <section class="hero" id="inicio">
 
-            <!-- CONTENIDO PRINCIPAL DEL VIDEO -->
+        <!-- HERO -->
+
+        <section
+            class="hero"
+            id="inicio">
+
+
+            <!-- COLUMNA PRINCIPAL -->
+
             <div class="hero-contenido">
 
-                <!-- VIDEO -->
+
+                <!-- VIDEO PRINCIPAL -->
+
                 <div class="hero-imagen">
 
-                    <video id="videoPrincipal" controls playsinline>
-                        <source src="static/videos/lagos.mp4" type="video/mp4">
+                    <video
+                        id="videoPrincipal"
+                        controls
+                        playsinline>
+
+                        <source
+                            src="static/videos/Lago de montaña.mp4"
+                            type="video/mp4">
+
                     </video>
 
                 </div>
 
 
+
                 <!-- INFORMACIÓN DEL VIDEO -->
+
                 <div class="hero-texto">
+
 
                     <h2>
                         Lagos y montañas
                     </h2>
+
 
                     <p>
                         95 mil visualizaciones · 10 abr 2024
                     </p>
 
 
+
+                    <!-- BOTONES -->
+
                     <div class="hero-botones">
 
-                        <a href="#" class="btn btn-principal">
+
+                        <button
+                            type="button"
+                            id="likesin"
+                            class="btn btn-principal">
+
                             👍
-                            <span>4,8 K</span>
-                        </a>
 
-                        <a href="#" class="btn btn-secundario">
+                            <span id="like">
+                                400
+                            </span>
+
+                        </button>
+
+
+
+                        <button
+                            type="button"
+                            id="dislikesin"
+                            class="btn btn-secundario">
+
                             👎
-                            <span>120</span>
-                        </a>
 
-                        <a href="#" class="btn">
+                            <span id="dislike">
+                                120
+                            </span>
+
+                        </button>
+
+
+
+                        <button
+                            type="button"
+                            class="btn">
+
                             Compartir
-                        </a>
 
-                        <a href="#mi-lista" class="btn">
+                        </button>
+
+
+
+                        <button
+                            type="button"
+                            id="añadirr"
+                            class="btn">
+
                             ＋ Añadir a la cola
-                        </a>
+
+                        </button>
+
 
                     </div>
+
 
 
                     <!-- CANAL -->
 
                     <div class="canal">
 
-                        <div class="canal-avatar"></div>
+
+                        <div class="canal-avatar">
+
+                            <img
+                                src="static/images/user.png"
+                                alt="VideoStream">
+
+                        </div>
+
 
                         <div class="canal-info">
 
@@ -124,34 +246,76 @@
                                 VideoStream
                             </strong>
 
-                            <p>
+                            <p id="suscripcion">
                                 1,2 M de suscriptores
                             </p>
 
                         </div>
 
-                        <button class="btn-suscribirse">
+
+                        <button
+                            type="button"
+                            id="Suscribirse"
+                            class="btn-suscribirse">
+
                             Suscribirse
+
                         </button>
+
 
                     </div>
 
 
-                    <a href="#" class="mostrar-mas">
-                        Mostrar más
+
+                    <!-- DESCRIPCIÓN -->
+
+                    <div class="descripcion-video">
+
+                        <p>
+
+                            <span>
+                                Un recorrido
+                            </span>
+
+                            por los lagos más hermosos
+                            de la Patagonia donde se
+                            pueden apreciar sus paisajes,
+                            rutas y consejos para viajar.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <a
+                        href="#"
+                        class="mostrar-mas">
+
+                        Mostrar más ↓
+
                     </a>
 
+
                 </div>
+
 
             </div>
 
 
+
             <!-- COLUMNA DERECHA -->
+
             <aside class="video-sidebar">
 
-                <!-- SIGUIENTE EN LA COLA -->
 
-                <div class="lista-cola" id="mi-lista">
+
+                <!-- COLA -->
+
+                <div
+                    class="lista-cola"
+                    id="mi-lista">
+
 
                     <div class="sidebar-header">
 
@@ -159,24 +323,44 @@
                             Siguiente en la cola
                         </h3>
 
-                        <button>
+
+                        <button
+                            type="button"
+                            id="limpiarCola">
+
                             Limpiar cola
+
                         </button>
 
                     </div>
 
-                    <!-- MINIATURAS DE VIDEOS-->
+
+
+                    <!-- VIDEO 1 -->
+
                     <article class="video-item">
 
                         <div class="miniatura">
 
-                            <video muted loop preload="metadata">
-                                <source src="static/videos/patagonia.mp4" type="video/mp4">
+                            <video
+                                id="explorando_lapatagonia"
+                                muted
+                                loop
+                                preload="metadata">
+
+                                <source
+                                    src="static/videos/Lago de montaña.mp4"
+                                    type="video/mp4">
+
                             </video>
 
-                            <span>6:15</span>
+
+                            <span>
+                                6:15
+                            </span>
 
                         </div>
+
 
                         <div class="video-info">
 
@@ -194,18 +378,40 @@
 
                         </div>
 
-                        <button>
+
+                        <button type="button">
                             ×
                         </button>
 
                     </article>
 
 
+
+                    <!-- VIDEO 2 -->
+
                     <article class="video-item">
 
                         <div class="miniatura">
-                            <span>4:10</span>
+
+                            <video
+                                id="comidaVideo"
+                                muted
+                                loop
+                                preload="metadata">
+
+                                <source
+                                    src="static/videos/Conozca las ciudades más grandes y pobladas del mundo.mp4"
+                                    type="video/mp4">
+
+                            </video>
+
+
+                            <span>
+                                4:10
+                            </span>
+
                         </div>
+
 
                         <div class="video-info">
 
@@ -223,18 +429,40 @@
 
                         </div>
 
-                        <button>
+
+                        <button type="button">
                             ×
                         </button>
 
                     </article>
 
 
+
+                    <!-- VIDEO 3 -->
+
                     <article class="video-item">
 
                         <div class="miniatura">
-                            <span>8:12</span>
+
+                            <video
+                                id="ciudadesVideo"
+                                muted
+                                loop
+                                preload="metadata">
+
+                                <source
+                                    src="static/videos/Conozca las ciudades más grandes y pobladas del mundo.mp4"
+                                    type="video/mp4">
+
+                            </video>
+
+
+                            <span>
+                                8:12
+                            </span>
+
                         </div>
+
 
                         <div class="video-info">
 
@@ -252,18 +480,24 @@
 
                         </div>
 
-                        <button>
+
+                        <button type="button">
                             ×
                         </button>
 
                     </article>
 
+
                 </div>
+
 
 
                 <!-- RECOMENDADOS -->
 
-                <div class="destinos-section" id="explorar">
+                <div
+                    class="destinos-section"
+                    id="explorar">
+
 
                     <div class="section-header">
 
@@ -276,17 +510,32 @@
 
                     <div class="destinos">
 
+
+                        <!-- RECOMENDADO 1 -->
+
                         <article class="destino-card">
 
                             <div class="targeta-imagen-torres">
 
-                                <video muted loop preload="metadata">
-                                    <source src="static/videos/trekking.mp4" type="video/mp4">
+                                <video
+                                    id="trekkingVideo"
+                                    muted
+                                    loop
+                                    preload="metadata">
+
+                                    <source
+                                        src="static/videos/Conozca las ciudades más grandes y pobladas del mundo.mp4"
+                                        type="video/mp4">
+
                                 </video>
 
-                                <span>5:20</span>
+
+                                <span>
+                                    5:20
+                                </span>
 
                             </div>
+
 
                             <div class="card-contenido">
 
@@ -298,8 +547,13 @@
                                     80 mil visualizaciones
                                 </p>
 
-                                <button class="btn-ver-mas">
+                                <button
+                                    type="button"
+                                    id="añadirr1"
+                                    class="btn-ver-mas">
+
                                     ＋
+
                                 </button>
 
                             </div>
@@ -307,17 +561,33 @@
                         </article>
 
 
+
+                        <!-- RECOMENDADO 2 -->
+
                         <article class="destino-card">
 
                             <div class="targeta-imagen-cusco">
 
-                                <video muted loop preload="metadata">
-                                    <source src="static/videos/trekking.mp4" type="video/mp4">
-                                </video>
+                                <div class="imagen-color fauna">
 
-                                <span>5:20</span>
+                                    <video
+                        id="videoPrincipal"
+                        controls
+                        playsinline>
+
+                        <source
+                            src="static/videos/Lago de montaña.mp4"
+                            type="video/mp4">
+
+                    </video>
+                                    <span>
+                                        3:50
+                                    </span>
+
+                                </div>
 
                             </div>
+
 
                             <div class="card-contenido">
 
@@ -329,8 +599,13 @@
                                     60 mil visualizaciones
                                 </p>
 
-                                <button class="btn-ver-mas">
+                                <button
+                                    type="button"
+                                    id="añadirr2"
+                                    class="btn-ver-mas">
+
                                     ＋
+
                                 </button>
 
                             </div>
@@ -338,17 +613,33 @@
                         </article>
 
 
+
+                        <!-- RECOMENDADO 3 -->
+
                         <article class="destino-card">
 
                             <div class="targeta-imagen-cancun">
 
-                                <video muted loop preload="metadata">
-                                    <source src="static/videos/trekking.mp4" type="video/mp4">
-                                </video>
+                                <div class="imagen-color atardecer">
 
-                                <span>4:32</span>
+                                    <video
+                        id="videoPrincipal"
+                        controls
+                        playsinline>
+
+                        <source
+                            src="static/videos/Lago de montaña.mp4"
+                            type="video/mp4">
+
+                    </video>
+                                    <span>
+                                        4:32
+                                    </span>
+
+                                </div>
 
                             </div>
+
 
                             <div class="card-contenido">
 
@@ -360,25 +651,38 @@
                                     72 mil visualizaciones
                                 </p>
 
-                                <button class="btn-ver-mas">
+                                <button
+                                    type="button"
+                                    class="btn-ver-mas">
+
                                     ＋
+
                                 </button>
 
                             </div>
 
                         </article>
 
+
                     </div>
+
 
                 </div>
 
+
             </aside>
+
 
         </section>
 
 
+
         <!-- MÁS VIDEOS -->
-        <section class="destinos-section mas-videos" id="destinos">
+
+        <section
+            class="destinos-section mas-videos"
+            id="destinos">
+
 
             <div class="section-header">
 
@@ -391,11 +695,30 @@
 
             <div class="destinos">
 
+
+                <!-- TARJETA 1 -->
+
                 <article class="destino-card">
 
-                    <div class="card-imagen torres">
-                        <span>6:15</span>
+                    <div class="targeta-imagen torres">
+
+                                                  <video
+                                id="ciudadesVideo"
+                                muted
+                                loop
+                                preload="metadata">
+
+                                <source
+                                    src="static/videos/Conozca las ciudades más grandes y pobladas del mundo.mp4"
+                                    type="video/mp4">
+
+                            </video>
+                        <span>
+                            6:15
+                        </span>
+
                     </div>
+
 
                     <div class="card-contenido">
 
@@ -404,7 +727,10 @@
                         </h3>
 
                         <p class="descripcion">
+
+                            VideoStream<br>
                             80 mil visualizaciones
+
                         </p>
 
                     </div>
@@ -412,11 +738,30 @@
                 </article>
 
 
+
+                <!-- TARJETA 2 -->
+
                 <article class="destino-card">
 
-                    <div class="card-imagen cusco">
-                        <span>4:32</span>
+                    <div class="targeta-imagen cusco">
+
+                                                  <video
+                                id="ciudadesVideo"
+                                muted
+                                loop
+                                preload="metadata">
+
+                                <source
+                                    src="static/videos/Conozca las ciudades más grandes y pobladas del mundo.mp4"
+                                    type="video/mp4">
+
+                            </video>
+                        <span>
+                            4:32
+                        </span>
+
                     </div>
+
 
                     <div class="card-contenido">
 
@@ -425,7 +770,10 @@
                         </h3>
 
                         <p class="descripcion">
+
+                            VideoStream<br>
                             95 mil visualizaciones
+
                         </p>
 
                     </div>
@@ -433,11 +781,30 @@
                 </article>
 
 
+
+                <!-- TARJETA 3 -->
+
                 <article class="destino-card">
 
-                    <div class="card-imagen cancun">
-                        <span>3:50</span>
+                    <div class="targeta-imagen cancun">
+
+                                                  <video
+                                id="ciudadesVideo"
+                                muted
+                                loop
+                                preload="metadata">
+
+                                <source
+                                    src="static/videos/Conozca las ciudades más grandes y pobladas del mundo.mp4"
+                                    type="video/mp4">
+
+                            </video>
+                        <span>
+                            3:50
+                        </span>
+
                     </div>
+
 
                     <div class="card-contenido">
 
@@ -446,7 +813,10 @@
                         </h3>
 
                         <p class="descripcion">
+
+                            VideoStream<br>
                             60 mil visualizaciones
+
                         </p>
 
                     </div>
@@ -454,11 +824,30 @@
                 </article>
 
 
-                <article class="destino-card">
 
-                    <div class="card-imagen madrid">
-                        <span>5:20</span>
+                <!-- TARJETA 4 -->
+
+                                <article class="destino-card">
+
+                    <div class="targeta-imagen cancun">
+
+                                                  <video
+                                id="ciudadesVideo"
+                                muted
+                                loop
+                                preload="metadata">
+
+                                <source
+                                    src="static/videos/Conozca las ciudades más grandes y pobladas del mundo.mp4"
+                                    type="video/mp4">
+
+                            </video>
+                        <span>
+                            5:20
+                        </span>
+
                     </div>
+
 
                     <div class="card-contenido">
 
@@ -467,7 +856,10 @@
                         </h3>
 
                         <p class="descripcion">
+
+                            VideoStream<br>
                             110 mil visualizaciones
+
                         </p>
 
                     </div>
@@ -477,14 +869,21 @@
             </div>
 
 
-            <p id="mensajeBusqueda" class="mensaje-busqueda"></p>
+            <p
+                id="mensajeBusqueda"
+                class="mensaje-busqueda">
+            </p>
+
 
         </section>
+
 
     </main>
 
 
+
     <script src="static/js/script.js"></script>
+
 
 </body>
 
